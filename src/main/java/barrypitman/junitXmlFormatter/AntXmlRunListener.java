@@ -99,12 +99,12 @@ public class AntXmlRunListener extends RunListener {
     /**
      * type attribute for failure and error elements
      */
-    private static String ATTR_TYPE = "type";
+    protected static String ATTR_TYPE = "type";
 
     /**
      * message attribute for failure elements
      */
-    private static String ATTR_MESSAGE = "message";
+    protected static String ATTR_MESSAGE = "message";
 
     /**
      * the properties element
@@ -130,7 +130,7 @@ public class AntXmlRunListener extends RunListener {
     /**
      * The XML document.
      */
-    private Document m_doc;
+    protected Document m_doc;
     /**
      * The wrapper for the whole testsuite.
      */
@@ -142,11 +142,11 @@ public class AntXmlRunListener extends RunListener {
     /**
      * Mapping between test Description:s -> Failure objects
      */
-    private Map m_failedTests = new HashMap();
+    protected Map m_failedTests = new HashMap();
     /**
      * Mapping between test Description:s -> XML Element:s
      */
-    private Map m_testElements = new HashMap();
+    protected Map m_testElements = new HashMap();
 
     /**
      * Convenient method to retrieve the full stacktrace from a given exception.
@@ -328,7 +328,7 @@ public class AntXmlRunListener extends RunListener {
         m_testStarts.put(descr, new Long(System.currentTimeMillis()));
     }
 
-    private void formatError(String type, Failure f) {
+    protected void formatError(String type, Failure f) {
         testFinished(f.getDescription());
         m_failedTests.put(f.getDescription(), f);
 
