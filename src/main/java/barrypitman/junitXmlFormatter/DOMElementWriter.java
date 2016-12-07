@@ -111,7 +111,7 @@ public class DOMElementWriter
 	 * Create an element writer.
 	 * The ?xml? declaration will be included, namespaces ignored.
 	 */
-	DOMElementWriter()
+	public DOMElementWriter()
 	{
 	}
 
