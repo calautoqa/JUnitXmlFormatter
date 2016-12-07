@@ -193,7 +193,7 @@ public class DOMElementWriter
 	 * corresponding tag.
 	 * @throws IOException if an error happens while writing to the stream.
 	 */
-	void write(Element element, Writer out, int indent, String indentWith) throws IOException
+	public void write(Element element, Writer out, int indent, String indentWith) throws IOException
 	{
 
 		// Write child elements and text
