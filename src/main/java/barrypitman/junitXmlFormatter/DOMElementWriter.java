@@ -41,7 +41,7 @@ import org.w3c.dom.Text;
  * org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter
  * XMLJUnitResultFormatter}.</p>
  */
-class DOMElementWriter
+public class DOMElementWriter
 {
 	private static final int HEX = 16;
 
