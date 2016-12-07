@@ -35,7 +35,7 @@ import java.util.TimeZone;
  *
  * @since Ant 1.5
  */
-final class DateUtils
+public final class DateUtils
 {
 
 	private static final int ONE_SECOND = 1000;
