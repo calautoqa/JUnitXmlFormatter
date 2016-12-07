@@ -104,7 +104,7 @@ public final class DateUtils
 	 * @param pattern the pattern to use to format the date.
 	 * @return the formatted date.
 	 */
-	static String format(Date date, String pattern)
+	public static String format(Date date, String pattern)
 	{
 		DateFormat df = createDateFormat(pattern);
 		return df.format(date);
